@@ -19,6 +19,10 @@ body{
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
 .box{
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -82,7 +86,6 @@ body{
     flex-direction: column;
     gap: 20px;
 
-    list-style: none;
 }
 
 .menu-informations-link{
@@ -95,6 +98,49 @@ body{
     text-decoration: none;
 
     color: var(--color-gray);
+}
+
+.menu-technologies{
+    padding: 30px 20px;
+}
+
+.menu-technologies-title{
+    padding-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: var(--color-gray)
+}
+
+.menu-technologies-container{
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu-technologies-name{
+    max-width: 86px;
+    width: 100%;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    
+    color: var(--color-black1);
+    background-color: var(--color-pink);
 }
 
 
