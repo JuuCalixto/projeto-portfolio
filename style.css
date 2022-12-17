@@ -17,6 +17,7 @@
 
 body{
     font-family: 'Merriweather Sans', sans-serif;
+    background-color: #22212C;
 }
 
 ul{
@@ -30,7 +31,7 @@ ul{
     background-color: var(--color-black3)
 }
 
-.menu-title{
+.menu .menu-title{
     padding-bottom: 20px;
 
     font-weight: 700;
@@ -69,7 +70,7 @@ ul{
     border-radius: 50%;
 }
 
-.menu-name-profile{
+.menu .menu-name-profile{
     padding-top: 30px;
 
     font-style: normal;
@@ -99,7 +100,7 @@ ul{
 
 }
 
-.menu-informations-link{
+.menu .menu-informations-link{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -124,7 +125,7 @@ ul{
     gap: 15px;
 }
 
-.menu-technologies-name{
+.menu .menu-technologies-name{
     max-width: 86px;
     width: 100%;
     height: 24px;
@@ -153,13 +154,13 @@ ul{
     padding-left: 20px;
 }
 
-.menu-list::before{
+.menu .menu-list::before{
     content: "•";
     margin-right: 8px;
     color: var(--color-gray);
 }
 
-.menu-list{
+.menu .menu-list{
     margin-bottom: 15px;
     font-weight: 300;
     font-size: 14px;
@@ -188,7 +189,7 @@ ul{
     padding-left: 60px;
 }
 
-.my-projects{
+.my-projects , .recent-posts{
     padding: 30px;
 
     display: flex;
@@ -196,11 +197,14 @@ ul{
     justify-content: space-between;
 }
 
-.my-projects .menu-title{
+.profile-content .my-projects .menu-title, 
+.profile-content .recent-posts .menu-title{
     padding-bottom: 0;
+
+    color: var(--color-gray);
 }
 
-.see-all-projects{
+.profile-content .see-all-projects{
     font-size: 14px;
     line-height: 18px;
 
@@ -214,14 +218,19 @@ ul{
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .repositories{
+    width: 100%;
+    max-width: 436.5px;
     padding: 30px;
+
+    max-height: 235px;
 }
 
-.repositories-name{
+.repositories .repositories-name{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -233,13 +242,29 @@ ul{
     color: var(--color-gray);
 }
 
-.repositories-description{
+.repositories .repositories-description{
+    max-height: 60px;
     margin: 22px 0 47px;
 
     font-size: 14px;
     line-height: 20px;
 
     color: var(--color-gray);
+
+    overflow-y: auto;
+}
+
+.repositories-description::-webkit-scrollbar {
+    width: 3px;
+}
+  
+.repositories-description::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.repositories-description::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray);
+    border-radius: 2.0rem;
 }
 
 .repositories-informations{
@@ -254,7 +279,7 @@ ul{
     gap: 16px;
 }
 
-.stars span{
+.repositories .stars span{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -265,13 +290,90 @@ ul{
     color: var(--color-gray);
 }
 
-.linguage{
+.repositories .linguage{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
     font-size: 14px;
     line-height: 18px;
     
     color: #837E9F;
 }
+
+/* Parte de posts */
     
+.recent-posts{
+    margin: 34px 0 30px;
+}
+
+.post{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 30px 30px 42px;
+}
+
+.image-profile-post img{
+    width: 128px;
+    height: 128px;
+
+    border-radius: 50%;
+}
+
+.post-title{
+    padding-bottom: 13px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: var(--color-gray);
+}
+
+.post-date{
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--color-gray);
+}
+
+.post-title-date{
+    margin-bottom: 28px;
+}
+
+.post-content p{
+    padding-bottom: 11px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    color: var(--color-gray);
+}
+
+.post-content span{
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--color-gray);
+    text-transform: lowercase;
+}
+
+.post-hashtag{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+footer{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: var(--color-gray);
+}
 
 
 
