@@ -42,8 +42,9 @@ ul{
 
 .container{
     width: 100%;
-
     padding: 40px 40px 20px;
+
+    display: flex;
 
     background-color: var(--color-black2);
 }
@@ -148,17 +149,17 @@ ul{
     margin: 30px 0;
 }
 
-.menu-experiences-container{
+.menu-list-container{
     padding-left: 20px;
 }
 
-.menu-experiences-list::before{
+.menu-list::before{
     content: "•";
     margin-right: 8px;
     color: var(--color-gray);
 }
 
-.menu-experiences-list{
+.menu-list{
     margin-bottom: 15px;
     font-weight: 300;
     font-size: 14px;
@@ -167,14 +168,110 @@ ul{
     color: var(--color-gray);
 }
 
-.menu-experiences-list:last-child{
+.menu-list:last-child{
     margin-bottom: 0;
 }
 
-.menu-experiences-list span{
+.menu-list span{
     display: block;
     margin-left: 17px;
 }
+
+.menu-education{
+    padding: 30px 20px;
+}
+
+/*Main */
+
+.profile-content{
+    width: 100%;
+    padding-left: 60px;
+}
+
+.my-projects{
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-projects .menu-title{
+    padding-bottom: 0;
+}
+
+.see-all-projects{
+    font-size: 14px;
+    line-height: 18px;
+
+
+    color: var(--color-gray);
+}
+/*parte do repositorio*/
+
+.repositories-container{
+    margin-top: 31px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.repositories{
+    padding: 30px;
+}
+
+.repositories-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: var(--color-gray);
+}
+
+.repositories-description{
+    margin: 22px 0 47px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    color: var(--color-gray);
+}
+
+.repositories-informations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.stars span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--color-gray);
+}
+
+.linguage{
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #837E9F;
+}
+    
 
 
 
